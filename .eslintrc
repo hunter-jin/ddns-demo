@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "Vue": false,
+    "weex": true
+  },
+  "extends": "standard",
+  "plugins": [
+    "html"
+  ],
+  "rules": {
+    "arrow-parens": 0,
+    "generator-star-spacing": 0,
+    // 空格缩进
+    "indent": ["error", 2],
+    // 函数括号前空格
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "ignore",
+      "asyncArrow": "ignore"
+    }]
+  }
+}
